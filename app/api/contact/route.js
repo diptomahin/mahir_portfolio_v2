@@ -12,13 +12,21 @@ export async function POST(request) {
       );
     }
 
-    // Create email transporter
+    // Create email transporter with Netlify-compatible settings
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'smtp.gmail.com',
+      port: 587,
+      secure: false,
       auth: {
         user: process.env.GMAIL_USER,
         pass: process.env.GMAIL_PASSWORD,
       },
+      pool: {
+        maxConnections: 1,
+        maxMessages: 1,
+      },
+      connectionTimeout: 5000,
+      socketTimeout: 5000,
     });
 
     // Email content
@@ -67,7 +75,8 @@ export async function POST(request) {
       { status: 200 }
     );
   } catch (error) {
-    console.error('Contact form error:', error);
+    console.error('Contact form error:', error.message);
+    console.error('Error details:', error);
     return Response.json(
       { message: 'Failed to submit form. Please try again or contact us directly.' },
       { status: 500 }

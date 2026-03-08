@@ -73,9 +73,9 @@ export default function Hero() {
               <a
                 href="/Mezbah Uddin Mahir Resume.pdf"
                 download="Mezbah Uddin Mahir Resume.pdf"
-                className="w-full bg-linear-to-r from-slate-700 to-slate-600 hover:from-slate-600 hover:to-slate-500 text-white font-bold py-4 px-8 rounded-lg text-lg transition transform hover:scale-105 flex items-center justify-center gap-2 group"
+                className="w-full bg-slate-700/60 hover:bg-slate-700 text-white font-bold py-3 px-8 rounded-lg text-base transition transform hover:scale-105 flex items-center justify-center gap-2 group border border-slate-600/50"
               >
-                <svg className="w-5 h-5 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
                 Download Resume
