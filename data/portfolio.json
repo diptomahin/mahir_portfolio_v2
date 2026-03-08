@@ -1,0 +1,163 @@
+{
+  "personal": {
+    "name": "Mezbah Uddin Mahir",
+    "title": "Branding & Marketing Strategist",
+    "titles": [
+      "Branding & Marketing Strategist",
+      "Meta & Google Ads Expert",
+      "Architect of Data-Driven Creativity"
+    ],
+    "valueStatement": "I turn brands into unforgettable stories and campaigns into revenue engines. Scaling healthcare and gaming brands globally with a fusion of artistry and analytics.",
+    "budgetManaged": 18.5,
+    "email": "mhmukit51@gmail.com",
+    "phone": "+8801725437438",
+    "linkedin": "https://www.linkedin.com/in/mezbah-uddin-mahir/",
+    "fiverr": "https://www.fiverr.com/miraz_07",
+    "education": "B.Sc in Computer Science & Engineering",
+    "school": "Shanto-Mariam University of Creative Technology (SMUCT)"
+  },
+  "stats": [
+    {
+      "icon": "🎯",
+      "title": "Leads Generated",
+      "value": 512450,
+      "suffix": "+",
+      "description": "Healthcare & Weight Loss Focus",
+      "highlight": true
+    },
+    {
+      "icon": "📈",
+      "title": "Average ROAS",
+      "value": 6.4,
+      "suffix": "x",
+      "description": "Medical & Service Brands",
+      "highlight": null
+    },
+    {
+      "icon": "💰",
+      "title": "Total Ad Budget Managed",
+      "value": 18.5,
+      "suffix": "M+",
+      "description": "Meta & Google Ads",
+      "highlight": true,
+      "isMillion": true
+    },
+    {
+      "icon": "💎",
+      "title": "Waste Slashed",
+      "value": 38,
+      "suffix": "%",
+      "description": "AI-Driven Budget Rules",
+      "highlight": false
+    }
+  ],
+  "pillars": [
+    {
+      "icon": "📖",
+      "title": "Brand Storytelling",
+      "description": "Transforming static carousels into scroll-stopping social proof",
+      "highlight": "Proven 22% lower CPL",
+      "color": "from-amber-400 to-yellow-400"
+    },
+    {
+      "icon": "🔬",
+      "title": "Data Alchemy",
+      "description": "CAPI integrations, Pixel-perfect tracking, and hyper-personalized audience sculpting",
+      "highlight": "Precision at Scale",
+      "color": "from-cyan-400 to-blue-400"
+    },
+    {
+      "icon": "⚡",
+      "title": "Agile Innovation",
+      "description": "Biweekly creative refreshes & UGC campaigns to stay ahead of market fatigue",
+      "highlight": "Always Ahead",
+      "color": "from-purple-400 to-pink-400"
+    },
+    {
+      "icon": "🧠",
+      "title": "The Tech Edge",
+      "description": "Leveraging CSE background to automate high-scale budget management and workflow scaling",
+      "highlight": "Engineering Level Expertise",
+      "color": "from-green-400 to-emerald-400"
+    }
+  ],
+  "caseStudies": [
+    {
+      "icon": "🏥",
+      "title": "Healthcare Lead Gen Machine",
+      "challenge": "Medical services brand struggling with high CAC and inconsistent lead quality",
+      "solution": "Implemented precision-targeted lead funnels with CAPI tracking and hyper-personalized creative sequences",
+      "results": [
+        {
+          "metric": "<$10 CPL",
+          "description": "Cost per lead (50% reduction)"
+        },
+        {
+          "metric": "15,000+",
+          "description": "Monthly qualified leads"
+        },
+        {
+          "metric": "38% CTR",
+          "description": "On email sequences"
+        }
+      ],
+      "color": "from-green-500 to-emerald-600",
+      "award": "🏆 Best Lead Gen Campaign 2024"
+    },
+    {
+      "icon": "🎮",
+      "title": "Fortune Fiesta Hub Gaming ROI",
+      "challenge": "Gaming community lacking viral growth and sustainable ad ROI",
+      "solution": "Built sequenced storytelling campaigns with UGC integration and A/B tested creative variations daily",
+      "results": [
+        {
+          "metric": "8.5x ROI",
+          "description": "Return on ad spend"
+        },
+        {
+          "metric": "$0.25 CPL",
+          "description": "Viral UGC cost"
+        },
+        {
+          "metric": "450K+",
+          "description": "Community members acquired"
+        }
+      ],
+      "color": "from-purple-500 to-pink-600",
+      "award": "🎯 Highest ROI Campaign Q3 2024"
+    }
+  ],
+  "techStack": {
+    "marketing": [
+      "Meta Ads",
+      "Google Ads",
+      "GTM",
+      "GHL",
+      "Zapier"
+    ],
+    "development": [
+      "Python",
+      "Flutter",
+      "Firebase",
+      "YOLOv8"
+    ]
+  },
+  "trustSignals": [
+    {
+      "icon": "⚡",
+      "label": "30 Min Response"
+    },
+    {
+      "icon": "🔒",
+      "label": "Data Secure"
+    },
+    {
+      "icon": "💼",
+      "label": "No Sales Calls"
+    },
+    {
+      "icon": "🎯",
+      "label": "Personalized"
+    }
+  ]
+}
