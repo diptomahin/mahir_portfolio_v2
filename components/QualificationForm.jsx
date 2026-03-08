@@ -45,11 +45,11 @@ export default function QualificationForm() {
   };
 
   return (
-    <section id="form" className="bg-linear-to-b from-gray-950 to-slate-950 py-20 px-4 sm:px-6 lg:px-8">
+    <section id="form" className="bg-linear-to-b from-gray-950 to-slate-950 py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+        <div className="text-center mb-10 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4">
             Qualify Your <span className="bg-linear-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent">Growth</span>
           </h2>
           <p className="text-slate-400 text-lg">
@@ -63,7 +63,7 @@ export default function QualificationForm() {
           <div className="absolute -inset-1 bg-linear-to-r from-amber-600/20 to-cyan-600/20 rounded-3xl blur-2xl opacity-50"></div>
 
           {/* Form Container */}
-          <div className="relative bg-slate-900/80 border border-slate-800 rounded-3xl p-8 sm:p-12 backdrop-blur">
+          <div className="relative bg-slate-900/80 border border-slate-800 rounded-3xl p-6 sm:p-8 md:p-12 backdrop-blur">
             {!submitted ? (
               <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Full Name */}

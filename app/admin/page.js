@@ -82,12 +82,12 @@ export default function AdminDashboard() {
   if (!formData) return null;
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white p-6">
+    <div className="min-h-screen bg-gray-950 text-white p-4 sm:p-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold text-amber-400 mb-2">Portfolio Admin</h1>
-          <p className="text-slate-400">Manage all content for your portfolio</p>
+        <div className="mb-8 px-4 sm:px-0">
+          <h1 className="text-3xl sm:text-4xl font-bold text-amber-400 mb-2">Portfolio Admin</h1>
+          <p className="text-slate-400 text-sm sm:text-base">Manage all content for your portfolio</p>
         </div>
 
         {/* Logout Button */}
@@ -97,7 +97,7 @@ export default function AdminDashboard() {
               localStorage.removeItem('adminAuth');
               router.push('/');
             }}
-            className="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2 rounded-lg transition text-sm"
+            className="bg-red-600 hover:bg-red-700 text-white font-bold px-3 sm:px-4 py-2 rounded-lg transition text-xs sm:text-sm"
           >
             🚪 Logout
           </button>
@@ -121,7 +121,7 @@ export default function AdminDashboard() {
         </div>
 
         {/* Content Editor */}
-        <div className="bg-slate-900 rounded-lg p-8 mb-8">
+        <div className="bg-slate-900 rounded-lg p-6 sm:p-8 mb-8 overflow-x-auto">
           {activeTab === 'personal' && (
             <div className="space-y-4">
               <h2 className="text-2xl font-bold mb-6">Personal Information</h2>
@@ -145,7 +145,7 @@ export default function AdminDashboard() {
               {formData.stats.map((stat, idx) => (
                 <div key={idx} className="bg-slate-800 p-4 rounded border border-slate-700">
                   <h3 className="font-bold mb-4 text-amber-400">{stat.title}</h3>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm mb-1">Icon</label>
                       <input

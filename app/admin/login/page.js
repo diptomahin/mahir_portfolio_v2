@@ -28,7 +28,7 @@ export default function AdminLogin() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-950 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gray-950 flex items-center justify-center px-4 py-16">
       <div className="w-full max-w-md">
         {/* Card */}
         <div className="bg-slate-900 border border-slate-800 rounded-lg p-8">

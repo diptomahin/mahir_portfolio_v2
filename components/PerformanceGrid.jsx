@@ -44,8 +44,8 @@ export default function PerformanceGrid() {
     <section id="stats" className="bg-gray-950 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4">
             The <span className="bg-linear-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent">Performance</span> Grid
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">

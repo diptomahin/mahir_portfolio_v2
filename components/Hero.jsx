@@ -20,14 +20,14 @@ export default function Hero() {
   };
 
   return (
-    <section id="hero" className="min-h-screen bg-linear-to-b from-gray-900 via-gray-950 to-gray-950 pt-32 px-4 sm:px-6 lg:px-8 flex items-center">
+    <section id="hero" className="min-h-screen bg-linear-to-b from-gray-900 via-gray-950 to-gray-950 pt-24 sm:pt-28 lg:pt-32 px-4 sm:px-6 lg:px-8 flex items-center">
       <div className="max-w-6xl mx-auto w-full">
         {/* Back glow effect */}
         <div className="absolute top-32 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
         
         <div className="relative z-10">
           {/* Main Title */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-6 leading-tight">
             {personal.name.split(' ').slice(0, -1).join(' ')}
             <br />
             <span className="bg-linear-to-r from-amber-400 via-amber-300 to-yellow-400 bg-clip-text text-transparent">{personal.name.split(' ').pop()}</span>
@@ -46,7 +46,7 @@ export default function Hero() {
           </p>
 
           {/* Value Statement */}
-          <p className="text-lg text-slate-200 mb-8 max-w-4xl leading-relaxed border-l-4 border-amber-400 pl-6">
+          <p className="text-base sm:text-lg text-slate-200 mb-8 max-w-4xl leading-relaxed border-l-4 border-amber-400 pl-6">
             {personal.valueStatement}
             <span className="block text-amber-300 font-semibold mt-2">Managing <span className="text-2xl">${personal.budgetManaged}M+</span> in lifetime ad budgets.</span>
           </p>

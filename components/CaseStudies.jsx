@@ -13,8 +13,8 @@ export default function CaseStudies() {
     <section id="cases" className="bg-gray-950 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4">
             Case Study <span className="bg-linear-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent">Highlights</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
@@ -42,7 +42,7 @@ export default function CaseStudies() {
                 {/* Icon & Title */}
                 <div className="mb-6 pt-4">
                   <div className="text-6xl mb-4">{caseStudy.icon}</div>
-                  <h3 className="text-3xl font-black text-white">
+                  <h3 className="text-2xl sm:text-3xl font-black text-white">
                     {caseStudy.title}
                   </h3>
                 </div>

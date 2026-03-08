@@ -20,16 +20,16 @@ export default function FloatingWhatsApp() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
-      className="fixed bottom-6 right-6 z-40 group"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 group"
     >
       {/* Animated Background Pulse */}
       <div className="absolute inset-0 bg-green-500/20 rounded-full animate-pulse group-hover:bg-green-500/40 transition"></div>
 
       {/* Button */}
-      <div className="relative w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl transform hover:scale-110 transition-all duration-300 cursor-pointer">
+      <div className="relative w-14 h-14 sm:w-16 sm:h-16 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl transform hover:scale-110 transition-all duration-300 cursor-pointer">
         {/* WhatsApp Icon */}
         <svg
-          className="w-7 h-7 text-white"
+          className="w-6 h-6 sm:w-7 sm:h-7 text-white"
           fill="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
