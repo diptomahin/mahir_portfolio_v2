@@ -55,19 +55,31 @@ export default function Hero() {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-16">
-              <button
-                onClick={() => scrollToSection('form')}
-                className="bg-amber-400 hover:bg-amber-500 text-gray-950 font-bold py-4 px-8 rounded-lg text-lg transition transform hover:scale-105"
+            <div className="flex flex-col gap-4 mb-16">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button
+                  onClick={() => scrollToSection('form')}
+                  className="bg-amber-400 hover:bg-amber-500 text-gray-950 font-bold py-4 px-8 rounded-lg text-lg transition transform hover:scale-105"
+                >
+                  Scale Your Brand Now →
+                </button>
+                <button
+                  onClick={() => scrollToSection('stats')}
+                  className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 font-bold py-4 px-8 rounded-lg text-lg transition"
+                >
+                  View Performance Data
+                </button>
+              </div>
+              <a
+                href="/Mezbah Uddin Mahir Resume.pdf"
+                download="Mezbah Uddin Mahir Resume.pdf"
+                className="w-full bg-linear-to-r from-slate-700 to-slate-600 hover:from-slate-600 hover:to-slate-500 text-white font-bold py-4 px-8 rounded-lg text-lg transition transform hover:scale-105 flex items-center justify-center gap-2 group"
               >
-                Scale Your Brand Now →
-              </button>
-              <button
-                onClick={() => scrollToSection('stats')}
-                className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 font-bold py-4 px-8 rounded-lg text-lg transition"
-              >
-                View Performance Data
-              </button>
+                <svg className="w-5 h-5 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Download Resume
+              </a>
             </div>
 
             {/* Trust Signal */}

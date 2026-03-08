@@ -13,6 +13,7 @@ export default function QualificationForm() {
 
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,23 +26,41 @@ export default function QualificationForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    setError('');
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitted(true);
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setSubmitted(false);
+          setFormData({
+            fullName: '',
+            companyWebsite: '',
+            primaryGoal: '',
+            monthlyAdSpend: '',
+            whatsappNumber: ''
+          });
+        }, 3000);
+      } else {
+        setError(data.message || 'Failed to submit form. Please try again.');
+      }
+    } catch (err) {
+      setError('An error occurred. Please try again later.');
+      console.error('Form submission error:', err);
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-      // Reset form after 3 seconds
-      setTimeout(() => {
-        setSubmitted(false);
-        setFormData({
-          fullName: '',
-          companyWebsite: '',
-          primaryGoal: '',
-          monthlyAdSpend: '',
-          whatsappNumber: ''
-        });
-      }, 3000);
-    }, 1000);
+    }
   };
 
   return (
@@ -158,6 +177,13 @@ export default function QualificationForm() {
                 <p className="text-slate-500 text-xs">
                   We respect your privacy. Your information will only be used to contact you about your growth opportunities.
                 </p>
+
+                {/* Error Message */}
+                {error && (
+                  <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-4 text-red-400 text-sm">
+                    ❌ {error}
+                  </div>
+                )}
 
                 {/* Submit Button */}
                 <button
