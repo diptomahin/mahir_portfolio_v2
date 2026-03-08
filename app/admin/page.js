@@ -123,19 +123,47 @@ export default function AdminDashboard() {
         {/* Content Editor */}
         <div className="bg-slate-900 rounded-lg p-6 sm:p-8 mb-8 overflow-x-auto">
           {activeTab === 'personal' && (
-            <div className="space-y-4">
+            <div className="space-y-6">
               <h2 className="text-2xl font-bold mb-6">Personal Information</h2>
-              {Object.entries(formData.personal).map(([key, value]) => (
-                <div key={key}>
-                  <label className="block text-sm font-semibold mb-2 capitalize">{key}</label>
-                  <input
-                    type={typeof value === 'number' ? 'number' : 'text'}
-                    value={value}
-                    onChange={(e) => handleInputChange('personal', key, e.target.value)}
-                    className="w-full bg-slate-800 border border-slate-700 rounded px-4 py-2 text-white focus:border-amber-400 focus:outline-none"
-                  />
-                </div>
-              ))}
+              
+              {/* Profile Image Preview and Edit */}
+              <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                <h3 className="font-bold text-amber-400 mb-4">Profile Image</h3>
+                {formData.personal.profileImage && (
+                  <div className="mb-4 rounded-lg overflow-hidden border border-slate-600 h-48 sm:h-64">
+                    <img 
+                      src={formData.personal.profileImage} 
+                      alt="Profile Preview" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
+                <label className="block text-sm font-semibold mb-2">Image URL</label>
+                <input
+                  type="text"
+                  value={formData.personal.profileImage}
+                  onChange={(e) => handleInputChange('personal', 'profileImage', e.target.value)}
+                  placeholder="https://example.com/image.jpg"
+                  className="w-full bg-slate-700 border border-slate-600 rounded px-4 py-2 text-white focus:border-amber-400 focus:outline-none"
+                />
+                <p className="text-xs text-slate-400 mt-2">Enter full image URL (JPG, PNG, WebP)</p>
+              </div>
+
+              {/* Other Personal Fields */}
+              {Object.entries(formData.personal).map(([key, value]) => {
+                if (key === 'profileImage') return null;
+                return (
+                  <div key={key}>
+                    <label className="block text-sm font-semibold mb-2 capitalize">{key.replace(/([A-Z])/g, ' $1')}</label>
+                    <input
+                      type={typeof value === 'number' ? 'number' : 'text'}
+                      value={value}
+                      onChange={(e) => handleInputChange('personal', key, e.target.value)}
+                      className="w-full bg-slate-800 border border-slate-700 rounded px-4 py-2 text-white focus:border-amber-400 focus:outline-none"
+                    />
+                  </div>
+                );
+              })}
             </div>
           )}
 
